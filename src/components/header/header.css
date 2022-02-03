@@ -1,0 +1,37 @@
+:root{
+  --main-color:#bfb9e9;
+  --dark-color: #a09bc4;
+  --light-color: #ded7ff;
+}
+
+body {
+  background-color:var(--main-color);
+}
+
+.neumorphism{
+  border-radius: 137px;
+  background: var(--main-color);
+  box-shadow:  12px 12px 24px var(--dark-color),
+             -12px -12px 24px var(--light-color);
+            
+}
+
+.header-container{
+  /* background-color: aqua; */
+  width: 100%;
+  height: 300px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+}
+
+.header__item{
+  background-color: blueviolet;
+}
+
+#message{
+  align-self: end;
+  padding: 7px;
+  height: 30px;
+  width: 30px;
+}
