@@ -2,36 +2,108 @@
   --main-color:#bfb9e9;
   --dark-color: #a09bc4;
   --light-color: #ded7ff;
+  --text-sm: 10px;
+  --text-md: 12px;
+  --text-lg: 14px;
 }
 
 body {
   background-color:var(--main-color);
+  font-family: 'Source Sans 3', sans-serif;
+
 }
 
-.neumorphism{
-  border-radius: 137px;
-  background: var(--main-color);
-  box-shadow:  12px 12px 24px var(--dark-color),
-             -12px -12px 24px var(--light-color);
-            
+.text-sm{
+  font-size: var(--text-sm);
+  text-align: center;
+  margin: 0;
+}
+
+.text-md{
+  font-size: var(--text-md);
+  text-align: center;
+  margin: 0;
+}
+
+.text-lg{
+  font-size: var(--text-lg);
+  text-align: center;
+  margin: 0;
+}
+
+.relative{
+  position: relative;
+}
+
+.center{
+  display: grid;
+  place-items: center;
+}
+
+.icon-sm{
+  width: 16px;
+}
+
+.icon-md{
+  width: 24px;
 }
 
 .header-container{
   /* background-color: aqua; */
-  width: 100%;
-  height: 300px;
   display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+  grid-template-columns: 16px 50px 150px 50px 16px;
+  margin-top: 20px;
 }
 
-.header__item{
-  background-color: blueviolet;
-}
-
-#message{
+.icon-neumorphism{
   align-self: end;
-  padding: 7px;
+  height: 35px;
+  width: 35px;
+  border-radius: 137px;
+  margin-bottom: 20px;
+  justify-self: center;
+  background: var(--main-color);
+  box-shadow:  12px 12px 24px var(--dark-color),
+              -12px -12px 24px var(--light-color);        
+}
+
+.notification{
+  position: absolute;
+  width: 8px; 
+  height: 8px;
+  background: red;
+  border-radius: 50%;
+  top: 1px;
+  right: 1px;
+}
+
+.profile-pic-neumorphism{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 16px 0;
+  box-shadow:  12px 12px 24px var(--dark-color),
+  -12px -12px 24px var(--light-color);        
+}
+
+.story{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(to right, red, purple);
+}
+
+.profile-picture{
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 3px solid var(--main-color);
+  background: var(--main-color);
+}
+
+/* 
+.header__img__small{
+  justify-self: center;
   height: 30px;
   width: 30px;
-}
+} */

@@ -5,6 +5,7 @@ function App() {
   return (
     <div>
       <Header />
+      <h2>prueba de caligrafia</h2>
       <Body />
     </div>
   );

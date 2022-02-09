@@ -43,7 +43,7 @@ const Home = () => {
 
   return (
     <div>
-      <h1>{`${userInfo.username}`}</h1>
+      {/* <h1>{`${userInfo.username}`}</h1>
       <h2 className='neumorphism'></h2>
       <p>{`${userInfo.media_count}`}</p>
       <p>{`${mediaInfo.data[0].id}`}</p>
@@ -54,7 +54,7 @@ const Home = () => {
             <img src={p.media_url} id={p.id} className='100px' />
           );
         })}
-      </div>
+      </div> */}
 
       <button onClick={() => evento({ setUserInfo, setMediaInfo })}>click</button>
     </div>
