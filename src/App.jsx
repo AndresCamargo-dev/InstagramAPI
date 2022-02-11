@@ -1,11 +1,12 @@
 import Body from './components/body/home';
 import Header from './components/header/header';
+import Posts from './components/posts/posts';
 
 function App() {
   return (
     <div>
       <Header />
-      <h2>prueba de caligrafia</h2>
+      <Posts />
       <Body />
     </div>
   );
