@@ -18,8 +18,18 @@ body {
             
 }
 
-img{
-   width: 100px; 
+.photos-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3px;
+  width: 280px;
+}
+
+.photos-container img{
+   width: 90px; 
+   height: 90px;
+   border-radius: 5px;
+   object-fit: cover;
  }
 
 h1{

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../body/home.css';
 const URL_API = "https://graph.instagram.com/me";
-const access_token = "IGQVJXVEhCTUNJMS02VDNuQ2R0WElxVjQxWjVxU1lZALTZA6SDQzNC1GeERkSmRST3JaMG5CZATh6TlRuWVhyNmlBcElYMDBfSmNIT3c3elkwaW9MUjZA4U3Bqd3NLUy1QbHE4eHY0VlQ5THk0R1Y2MnZArUUhUZAUJ5ampUMkFz";
+const access_token = "IGQVJXVGFRRW1Td281OXVQYjd2WWVZANmJydEZAvY3ctVV9mNUJBaGkyZADZABZAmtlTXphRDgyVU9DY29Cdnl3OURZAZAHpfR1RNaFVqMFVoeUhadzdTUnVjNEl0QUIwZAGVFU2VNMFZAoaS1JWmJuRGNLanpRLWgxVTMxUjc5Uldn";
 
 const getUserInfo = async (setUserInfo) => {
   try {
@@ -46,15 +46,15 @@ const Home = () => {
       {/* <h1>{`${userInfo.username}`}</h1>
       <h2 className='neumorphism'></h2>
       <p>{`${userInfo.media_count}`}</p>
-      <p>{`${mediaInfo.data[0].id}`}</p>
+      <p>{`${mediaInfo.data[0].id}`}</p> */}
 
-      <div>
+      <div className='photos-container'>
         {mediaInfo && mediaInfo.data.map((p) => {
           return (
             <img src={p.media_url} id={p.id} className='100px' />
           );
         })}
-      </div> */}
+      </div>
 
       <button onClick={() => evento({ setUserInfo, setMediaInfo })}>click</button>
     </div>
